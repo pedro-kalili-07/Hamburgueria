@@ -24,6 +24,7 @@
     <title>Dev burguer</title>
   </head>
   <body>
+    <!--INICIO HEADER-->
     <header class="w-full h-[420px] bg-home bg-cover bg-center">
       <div class="w-full h-full flex flex-col justify-center items-center">
         <img
@@ -42,15 +43,19 @@
         </div>
       </div>
     </header>
+    <!--FIM HEADER-->
 
     <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
       Conheça nosso menu
     </h2>
 
+    <!--INICIO MENU-->
     <div id="menu">
+      <!--INICIO GRID HAMBURGUER-->
       <main
         class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
       >
+      <!--PRODUTO ITEM -->
         <div class="flex gap-2">
           <img
             src="./assets/hamb-1.png"
@@ -77,7 +82,9 @@
             </div>
           </div>
         </div>
+        <!--FIM PRODUTO ITEM-->
 
+        <!--INICIO PRODUTO ITEM-->
         <div class="flex gap-2">
           <img
             src="./assets/hamb-2.png"
@@ -104,6 +111,9 @@
             </div>
           </div>
         </div>
+        <!--FIM PRODUTO ITEM-->
+
+        <!--INICIO PRODUTO ITEM-->
         <div class="flex gap-2">
           <img
             src="./assets/hamb-3.png"
@@ -130,7 +140,9 @@
             </div>
           </div>
         </div>
+        <!--FIM PRODUTO ITEM-->
 
+        <!--INICIO PRODUTO ITEM-->
         <div class="flex gap-2">
           <img
             src="./assets/hamb-4.png"
@@ -157,16 +169,20 @@
             </div>
           </div>
         </div>
+        <!--FIM PRODUTO ITEM-->
+
       </main>
+      <!--FIM GRID HAMBURGUER-->
 
       <div class="mx-auto max-w-7xl px-2 my-2">
         <h2 class="font-bold text-3xl">Bebidas</h2>
       </div>
 
+      <!--INICIO GRID BEBIDAS-->
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-        id="menu"
       >
+        <!--BEBIDA ITEM-->
         <div class="flex gap-2 w-full">
           <img
             src="./assets/refri-1.png"
@@ -189,7 +205,9 @@
             </div>
           </div>
         </div>
+        <!--FIM BEBIDA ITEM-->
 
+        <!--BEBIDA ITEM-->
         <div class="flex gap-2 w-full">
           <img
             src="./assets/refri-2 (2).png"
@@ -212,11 +230,17 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <!--FIM BEBIDA ITEM-->
 
-    <div
-      class="bg-black/60 w-full h-full fixed top-0 left-0 z=[99] flex items-center justify-center hidden"
+      </div>
+      <!--FIM GRID BEBIDAS-->
+
+    </div>
+    <!--FIM MENU-->
+
+    <!--MODAL CART-->
+    <div id="cart-modal"
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden"
     >
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font bold text-2xl mb-2">Seu carrinho</h2>
@@ -224,7 +248,7 @@
         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
         <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-
+        
         <p class="font-bold">Endereço de entrega</p>
 
         <input
@@ -248,7 +272,9 @@
         </div>
       </div>
     </div>
+    <!--FIM MODAL CART-->
 
+    <!--BUTTON CART FOOTER-->
     <footer
       class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center"
     >
@@ -256,11 +282,14 @@
         class="flex items-center gap-2 text-white font-bold"
         id="cart-btn"
       >
-        <span id="cart-count">2</span>
+        (<span id="cart-count">0</span>)
         veja meu carrinho
 
         <i class="fa fa-cart-plus text-lg text-white"></i>
       </button>
     </footer>
+    <!--FIM BUTTON CART FOOTER-->
+
+    <script src="script.js" defer></script>
   </body>
 </html>
